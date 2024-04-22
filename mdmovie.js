@@ -1,3 +1,28 @@
+/*
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { 
+  getFirestore,
+  collection, 
+  addDoc,
+  getDocs
+} from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDyrmNcww5pjkua4iGZhmda8VOxJuVHIZQ",
+  authDomain: "moviesearch-ad917.firebaseapp.com",
+  projectId: "moviesearch-ad917",
+  storageBucket: "moviesearch-ad917.appspot.com",
+  messagingSenderId: "749998468373",
+  appId: "1:749998468373:web:4b5fefa29b49f086ef8d1c",
+  measurementId: "G-R710L66HL5"
+};
+
+// Firebase 인스턴스 초기화
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+*/
+
 const options = {
     method: 'GET',
     headers: {
@@ -10,3 +35,10 @@ const options = {
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
+    
+  
+  function Search() {
+    let search_code = document.getElementById('mvsearch').value;
+    alert(search_code);
+  };
+  

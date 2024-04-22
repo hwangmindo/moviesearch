@@ -1,8 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+* {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 .header {
-    background-color: red;
+    background-color: white;
     border: 1px solid gray;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
     height: 100px;
+    display: flex;
+}
+
+.header h1 { /* MD Movie collection */
+    width: 500px;
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+.seabrt { /* 검색 input 창 */
+    margin-right: 100px;
+    margin-left: auto;
+    padding: 100px auto 0px auto;
+    width: 320px;
+    padding: 20px;
+}
+.mvcards { /* 영화 카드 구역 */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
