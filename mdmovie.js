@@ -42,3 +42,22 @@ const options = {
     alert(search_code);
   };
   
+
+/*
+  fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
+    .then(response => response.json())
+    .then(data => {
+        const movies = data.results; // 'results' 키의 값 추출
+        console.log(movies); // 영화 목록 출력
+    })
+    .catch(err => console.error(err));
+    
+
+    fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
+    .then(response => response.json())  // 응답을 JSON으로 파싱
+    .then(data => {
+        const movies = data.results; // 'results' 키의 값 추출
+        console.log(movies); // 영화 목록 출력
+    })
+    .catch(err => console.error(err));  // 오류가 발생할 경우 처리
+    */
