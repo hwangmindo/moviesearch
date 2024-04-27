@@ -9,34 +9,79 @@
 
 .header {
     background-color: white;
-    border: 1px solid gray;
+    border: 10px solid gray;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
-    height: 100px;
+    height: 120px;
     display: flex;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.header h1 { /* MD Movie collection */
+.header h1 {
+    /* MD Movie collection */
     width: 500px;
     font-size: 50px;
+    color: dimgray;
     margin-left: 40px;
     margin-top: 10px;
     margin-bottom: auto;
+    text-shadow: 2px 2px 5px black
 }
 
-.seabrt { /* 검색 input 창 */
+.seabrt {
+    /* 검색 input 창 */
     margin-right: 100px;
     margin-left: auto;
     padding: 100px auto 0px auto;
     width: 320px;
     padding: 20px;
 }
-.mvcards { /* 영화 카드 구역 */
+
+.mvcards {
+    /* 영화 카드 구역 */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 50px;
+}
+
+.card {
+    /* 카드 */
+    border: 5px solid gray;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 80px;
+    width: 390px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.cardImg {
+    /* 카드 이미지 구역 */
+    width: 300px;
+    height: 350px;
+    display: flex;
+}
+
+.cardImg img {
+    /* 카드 이미지 */
+    width: 100%;
+    border-radius: 10px;
+}
+
+.topbrt {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.topbrt img {
+    width: 30px;
 }
